@@ -33,7 +33,16 @@ module.exports = {
       backgroundImage: {
         'slider-bg': 'url("./image/slider-bg.jpg")',
         'card1-bg': 'url("./image/card1.jpg")',
-        'card2-bg': 'url("./image/card2.jpg")'
+        'card2-bg': 'url("./image/card2.jpg")',
+        'card3-bg': 'url("./image/card3.jpg")',
+        'card4-bg': 'url("./image/card4.jpg")',
+        'card5-bg': 'url("./image/card5.jpg")',
+        'card6-bg': 'url("./image/card6.jpg")',
+        'card7-bg': 'url("./image/card7.jpg")',
+        'card8-bg': 'url("./image/card8.jpg")',
+        'card9-bg': 'url("./image/card9.jpg")',
+        'card10-bg': 'url("./image/card10.jpg")',
+        'card11-bg': 'url("./image/card11.jpg")'
       }
     },
   },
