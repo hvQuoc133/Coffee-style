@@ -5,6 +5,9 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+      'xs': '480px',
+      },
       fontFamily: {
         Karla: ['Karla', 'sans-serif']
       },
@@ -42,7 +45,10 @@ module.exports = {
         'card8-bg': 'url("./image/card8.jpg")',
         'card9-bg': 'url("./image/card9.jpg")',
         'card10-bg': 'url("./image/card10.jpg")',
-        'card11-bg': 'url("./image/card11.jpg")'
+        'card11-bg': 'url("./image/card11.jpg")',
+        'card-magazine1-bg': 'url("./image/magazine1.jpg")',
+        'card-magazine2-bg': 'url("./image/magazine2.jpg")',
+        'card-magazine3-bg': 'url("./image/magazine3.jpg")'
       }
     },
   },
