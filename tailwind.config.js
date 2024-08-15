@@ -51,7 +51,11 @@ module.exports = {
         'card-magazine1-bg': 'url("./image/magazine1.jpg")',
         'card-magazine2-bg': 'url("./image/magazine2.jpg")',
         'card-magazine3-bg': 'url("./image/magazine3.jpg")',
-        'bg-parallax': 'url("./image/parallax.jpg")'
+        'bg-parallax': 'url("./image/parallax.jpg")',
+        'lifestyle_story1-bg': 'url("./image/lifestyle_story1.jpg")',
+        'lifestyle_story2-bg': 'url("./image/lifestyle_story2.jpg")',
+        'lifestyle_story3-bg': 'url("./image/lifestyle_story3.jpg")'
+        
       }
     },
   },
