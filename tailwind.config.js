@@ -1,13 +1,15 @@
 const { transform } = require('sucrase');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {
-      screens: {
+    screens: {
       'xs': '480px',
-      },
+      ...defaultTheme.screens,
+    },
+    extend: {
       fontFamily: {
         Karla: ['Karla', 'sans-serif']
       },
@@ -48,7 +50,8 @@ module.exports = {
         'card11-bg': 'url("./image/card11.jpg")',
         'card-magazine1-bg': 'url("./image/magazine1.jpg")',
         'card-magazine2-bg': 'url("./image/magazine2.jpg")',
-        'card-magazine3-bg': 'url("./image/magazine3.jpg")'
+        'card-magazine3-bg': 'url("./image/magazine3.jpg")',
+        'bg-parallax': 'url("./image/parallax.jpg")'
       }
     },
   },
