@@ -38,3 +38,7 @@
 .cf-button {
     @apply text-center uppercase tracking-widest py-4 px-8 text-xs font-bold cursor-pointer hover:bg-opacity-95;
 }
+
+.cf-a-footer {
+    @apply hover:text-coffee-400;
+}
