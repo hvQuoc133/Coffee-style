@@ -55,7 +55,6 @@ module.exports = {
         'lifestyle_story1-bg': 'url("./image/lifestyle_story1.jpg")',
         'lifestyle_story2-bg': 'url("./image/lifestyle_story2.jpg")',
         'lifestyle_story3-bg': 'url("./image/lifestyle_story3.jpg")'
-        
       }
     },
   },
