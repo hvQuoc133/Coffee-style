@@ -4,35 +4,36 @@
 @tailwind utilities;
 
 /*cf = coffee*/
-.cf-topmenu-expanded{
+.cf-topmenu-expanded {
     @apply absolute top-10 z-50 w-full text-center bg-white animate-slideDown;
 }
 
-.cf-top-menu-item{
-    @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0
-    after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-0  hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+.cf-top-menu-item {
+    @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
 }
 
-.cf-top-menu-item-active{
+.cf-top-menu-item-active {
     @apply text-gray-800;
 }
 
-.cf-icon{
-    @apply w-5 h-5 inline-block ;
+.cf-icon {
+    @apply w-5 h-5 inline-block;
 }
 
-.cf-bagde-cricle{
+.cf-bagde-cricle {
     @apply text-xs text-center rounded-full px-1.5;
 }
 
-.cf-subheadline{
-    @apply  flex justify-center items-center mb-24;
+.cf-subheadline {
+    @apply flex justify-center items-center my-16;
 }
-.cf-subheadline-deco-line{
-    @apply  w-8 h-px bg-gray-300;
+
+.cf-subheadline-deco-line {
+    @apply w-8 h-px bg-gray-300;
 }
-.cf-subheadline-label{
-    @apply  uppercase mx-4 tracking-widest text-gray-500 font-medium text-xs text-center;
+
+.cf-subheadline-label {
+    @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-xs text-center;
 }
 
 .cf-button {
@@ -41,4 +42,51 @@
 
 .cf-a-footer {
     @apply hover:text-coffee-400;
+}
+
+#root {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.cf-parallax,
+.cf-no-parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.cf-parallax {
+    height: 40vh;
+}
+
+.cf-no-parallax {
+    height: auto;
+    z-index: 999;
+    background: white;
+}
+
+.cf-parallax-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media screen(xl) {
+    .cf-parallax {
+        height: 70vh;
+        transform-style: preserve-3d;
+    }
+
+    .cf-parallax-img {
+        transform: translateZ(-1px) scale(1.5);
+    }
 }
